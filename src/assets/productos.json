@@ -1,0 +1,14 @@
+[
+    { "nombre": "Croquetas para Perro", "precio": 500, "Descripcion": "Alimento premium para perros adultos", "imagen": "https://images.pexels.com/photos/3299906/pexels-photo-3299906.jpeg" },
+    { "nombre": "Croquetas para Gato", "precio": 450, "Descripcion": "Alimento balanceado para gatos de todas las edades", "imagen": "https://images.pexels.com/photos/7747313/pexels-photo-7747313.jpeg" },
+    { "nombre": "Hueso de Juguete", "precio": 150, "Descripcion": "Juguete masticable para perros", "imagen": "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" },
+    { "nombre": "Rascador para Gatos", "precio": 600, "Descripcion": "Rascador con base de madera y cuerda de sisal", "imagen": "https://images.pexels.com/photos/1605486/pexels-photo-1605486.jpeg" },
+    { "nombre": "Arena para Gatos", "precio": 350, "Descripcion": "Arena absorbente para la caja de arena", "imagen": "https://images.pexels.com/photos/3573651/pexels-photo-3573651.jpeg" },
+    { "nombre": "Collar Antipulgas", "precio": 250, "Descripcion": "Protección contra pulgas y garrapatas", "imagen": "https://images.pexels.com/photos/4587950/pexels-photo-4587950.jpeg" },
+    { "nombre": "Jaula para Pájaros", "precio": 1200, "Descripcion": "Jaula espaciosa con accesorios para pájaros", "imagen": "https://images.pexels.com/photos/105625/pexels-photo-105625.jpeg" },
+    { "nombre": "Cepillo para Mascotas", "precio": 200, "Descripcion": "Cepillo para eliminar el pelo suelto", "imagen": "https://images.pexels.com/photos/3985079/pexels-photo-3985079.jpeg" },
+    { "nombre": "Casita para Perros", "precio": 1800, "Descripcion": "Refugio cómodo y resistente para perros", "imagen": "https://images.pexels.com/photos/676458/pexels-photo-676458.jpeg" },
+    { "nombre": "Snacks para Perros", "precio": 300, "Descripcion": "Premios saludables para perros", "imagen": "https://images.pexels.com/photos/7210741/pexels-photo-7210741.jpeg" },
+    { "nombre": "Juguete para Gatos", "precio": 180, "Descripcion": "Pelota interactiva con catnip", "imagen": "https://images.pexels.com/photos/1049769/pexels-photo-1049769.jpeg" },
+    { "nombre": "Pecera con Filtros", "precio": 2500, "Descripcion": "Pecera completa con sistema de filtración", "imagen": "https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg" }
+]

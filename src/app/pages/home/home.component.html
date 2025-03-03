@@ -1,0 +1,118 @@
+<div class="relative w-full bg-gray-50">
+
+    <!-- Carousel Section -->
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-96 overflow-hidden rounded-lg">
+            <!-- Item 1 -->
+            <div class="duration-700 ease-in-out" data-carousel-item>
+                <img src="https://elagroec.com/wp-content/uploads/2021/06/header5.png" class="absolute block w-full h-full object-cover" alt="Imagen de producto 1">
+            </div>
+            <!-- Item 2 -->
+            <div class="duration-700 ease-in-out" data-carousel-item>
+                <img src="https://lasillarota.com/u/fotografias/m/2023/8/5/f425x230-473702_487684_5050.jpg" class="absolute block w-full h-full object-cover" alt="Imagen de producto 2">
+            </div>
+            <!-- Item 3 -->
+            <div class="duration-700 ease-in-out" data-carousel-item>
+                <img src="https://fotos.perfil.com/2022/05/27/mercado-para-mascotas-1362928.jpg" class="absolute block w-full h-full object-cover" alt="Imagen de producto 3">
+            </div>
+        </div>
+
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" id="prev-button">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" id="next-button">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+
+    <!-- Slider navigation logic -->
+    <script>
+        let currentIndex = 0;
+        const items = document.querySelectorAll('[data-carousel-item]');
+        const totalItems = items.length;
+
+        const prevButton = document.getElementById('prev-button');
+        const nextButton = document.getElementById('next-button');
+
+        function updateCarousel() {
+            items.forEach((item, index) => {
+                item.classList.add('hidden');
+                if (index === currentIndex) {
+                    item.classList.remove('hidden');
+                }
+            });
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex === 0) ? totalItems - 1 : currentIndex - 1;
+            updateCarousel();
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex === totalItems - 1) ? 0 : currentIndex + 1;
+            updateCarousel();
+        });
+
+        // Initialize carousel
+        updateCarousel();
+    </script>
+     <!-- Featured Products Section -->
+     <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-semibold text-gray-800 mb-12">Productos Destacados</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="https://fotos.perfil.com/2022/05/27/mercado-para-mascotas-1362928.jpg" alt="Producto 1" class="w-full h-56 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Comida para Perros</h3>
+                    <p class="text-gray-600">Alimento balanceado para perros adultos, ideal para mantener su salud y vitalidad.</p>
+                    <span class="text-lg font-semibold text-gray-900 mt-2">$30.99</span>
+                    <button class="w-full bg-blue-600 text-white py-2 mt-4 rounded-lg hover:bg-blue-700">Agregar al carrito</button>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="https://media.istockphoto.com/id/877490114/es/foto/accesorios-del-perro-sobre-fondo-amarillo-vista-superior-concepto-de-animales-y-mascotas.jpg?s=612x612&w=0&k=20&c=5q2oC1LVv0FWpg_jWEND4wGNbzYWWW-zgG0fu5Xoavg=" alt="Producto 2" class="w-full h-56 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Collar para Perro</h3>
+                    <p class="text-gray-600">Collar ajustable y cómodo para perros de todas las razas y tamaños.</p>
+                    <span class="text-lg font-semibold text-gray-900 mt-2">$12.49</span>
+                    <button class="w-full bg-blue-600 text-white py-2 mt-4 rounded-lg hover:bg-blue-700">Agregar al carrito</button>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Producto 3" class="w-full h-56 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Juguete para Gato</h3>
+                    <p class="text-gray-600">Pelota interactiva para gatos, perfecta para mantenerlos activos.</p>
+                    <span class="text-lg font-semibold text-gray-900 mt-2">$8.99</span>
+                    <button class="w-full bg-blue-600 text-white py-2 mt-4 rounded-lg hover:bg-blue-700">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold text-gray-800 mb-8">Sobre Nosotros</h2>
+            <p class="text-lg text-gray-600 mb-8">En nuestra tienda, ofrecemos los mejores productos para tus mascotas. Desde alimentos hasta accesorios, cuidamos cada detalle para que tu mascota se sienta feliz y saludable.</p>
+            <a href="#" class="text-blue-600 text-lg font-medium hover:underline">Saber más sobre nosotros</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold text-gray-800 mb-8">Contáctanos</h2>
+            <p class="text-lg text-gray-600 mb-8">Si tienes alguna duda, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte.</p>
+            <a href="mailto:contacto@tienda.com" class="text-blue-600 text-lg font-medium hover:underline">Enviar un correo</a>
+        </div>
+    </section>
+</div>

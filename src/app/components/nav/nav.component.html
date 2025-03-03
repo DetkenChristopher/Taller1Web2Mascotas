@@ -1,0 +1,34 @@
+<nav class="bg-gradient-to-r from-blue-600 to-purple-700 border-b-2 border-blue-800 shadow-lg">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3">
+            <img src="https://media.istockphoto.com/id/1206806317/es/vector/icono-del-carrito-de-compras-aislado-sobre-fondo-blanco.jpg?s=612x612&w=is&k=20&c=uTT_STG3ftl-FooBCrSUJSltXdbKsFvpTmyPfyxpGvA=" 
+                class="h-10 rounded-full shadow-lg" alt="Tienda Logo" />
+            <span class="text-2xl font-bold text-white">Tienda</span>
+        </a>
+        <div class="flex md:order-2 space-x-3">
+            <button type="button" routerLink="formulario-usuario" class="text-white bg-yellow-500 hover:bg-yellow-600 transition-transform transform hover:scale-105 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 shadow-md">Registrate</button>
+            <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white bg-gray-700 rounded-lg md:hidden hover:bg-gray-600 focus:ring-2 focus:ring-gray-400">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+            <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 border rounded-lg bg-gray-100 md:bg-transparent md:border-0">
+                <li>
+                    <a routerLink="home" routerLinkActive="activo" 
+                        class="block py-2 px-4 text-white bg-blue-500 rounded-md hover:bg-blue-700 transition-all">Home</a>
+                </li>
+                <li>
+                    <a routerLink="productos" routerLinkActive="activo" 
+                        class="block py-2 px-4 text-gray-900 rounded-md hover:bg-gray-200 transition-all">Productos</a>
+                </li>
+                <li>
+                    <a routerLink="Nosotros" routerLinkActive="activo" 
+                        class="block py-2 px-4 text-gray-900 rounded-md hover:bg-gray-200 transition-all">Nosotros</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
